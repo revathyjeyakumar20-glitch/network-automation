@@ -1,0 +1,8 @@
+account_balance = float (input("Please enter your account balance: "))
+amount_to_withdraw = float (input("Please enter the amount you want to withdraw: "))
+if amount_to_withdraw > account_balance:
+    print("Insufficient funds. Withdrawal failed.")
+else:   
+    account_balance -= amount_to_withdraw
+    print("Withdrawal successful.")
+    print(f"Remaining balance:: {account_balance:.2f}")
